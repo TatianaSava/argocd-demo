@@ -7,7 +7,6 @@ replicaCount: 5
 
 ingress:
   enabled: true
-  className: ""
   annotations: 
     ingress.kubernetes.io/ssl-redirect: "false"
     kubernetes.io/ingress.class: nginx
@@ -18,7 +17,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: []
+  tls:
   - secretName: argocd-stage
      hosts:
        - argocd-stage.tatianatech.com
