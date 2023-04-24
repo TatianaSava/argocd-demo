@@ -19,6 +19,6 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls:
-  - secretName: argocd-qa-tls
+   - secretName: argocd-qa-tls
      hosts:
        - argocd-qa.tatianatech.com
